@@ -1,0 +1,14 @@
+.c-target{
+
+    
+
+    &__title{
+        font-weight: getFontWeight(8);
+        font-size: getFontSize("xl");
+    }
+
+    &__img{
+        height: 275px;
+    }
+
+}

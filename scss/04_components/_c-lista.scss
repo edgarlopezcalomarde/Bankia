@@ -1,0 +1,14 @@
+.c-lista{
+    display: flex;
+    flex-direction: column;
+    gap: getGap(1);
+
+    &__titulo{
+        color: getColor("gris",4);
+        font-weight: getFontWeight(7);
+    }
+
+    &__item{
+        color: getColor("gris",4);
+    }
+}

@@ -1,0 +1,15 @@
+.c-icon{
+   
+    color: black;
+    cursor: pointer;
+
+    
+    &--search{
+        @include custom-style();
+    }
+
+    &--principal{
+        color: getColor("turquesa",4);
+    }
+
+}

@@ -1,0 +1,46 @@
+.c-card{
+
+    display: flex;
+    flex-direction: column;
+    gap: getGap(6);
+    
+    border-radius: getBorderRadius(1);
+    width: 220px;
+  
+
+    //box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+
+    @include box-shadow(6);
+
+    &__img{
+        object-fit: cover;
+    }
+
+    &__title{
+        font-weight: bolder;
+        padding-left: getPadding(8);
+        padding-right: getPadding(8);
+    }
+
+    &__description{
+        padding-left: getPadding(8);
+        padding-right: getPadding(8);
+    }
+
+    &__footer{
+        padding-left: getPadding(8);
+        padding-right: getPadding(8);
+        padding-bottom: getPadding(8);
+        margin-top: auto;
+    }
+
+    &__icon{
+        margin-left: getMargin(8);
+        margin-right: getMargin(8);
+        margin-top: getMargin(8);
+        margin-bottom: getMargin(8);
+        width: 50px;
+    }
+    
+    
+}

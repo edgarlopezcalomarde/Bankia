@@ -1,0 +1,26 @@
+.c-servicios{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: getGap(6);
+
+    &__img{
+        padding: 10px 12px ;
+        background-color: getColor("turquesa", 4);
+        color: getColor("blanco", 1);
+        border-radius: 100%;
+    }
+
+    &__body{
+
+    }
+
+    &__title{
+
+    }
+
+    &__descripcion{
+
+    }
+
+}

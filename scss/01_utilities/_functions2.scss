@@ -1,0 +1,34 @@
+
+//Pow
+@function pow($number, $exponent) {
+    $value: 1;
+  
+    @if $exponent > 0 {
+      @for $i from 1 through $exponent {
+        $value: $value * $number;
+      }
+    } @else if $exponent < 0 {
+      @for $i from 1 through -$exponent {
+        $value: calc($value / $number);
+      }
+    }
+  
+    @return $value;
+}
+
+
+@function getFontSizePro($index) {
+    @return pow(1.2, $index) * 16px;
+}
+
+
+@for $i from 1 to 6 {
+    .g--font-size-#{$i}s{
+        font-size: getFontSizePro(-$i);
+    }
+
+    .g--font-size-#{$i}l{
+        font-size: getFontSizePro($i);
+    }
+}
+

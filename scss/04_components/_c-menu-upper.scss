@@ -1,0 +1,42 @@
+.c-menu-upper{
+
+    display: flex;
+    flex-direction: row;
+    background-color: getColor("blanco", 3);
+
+    padding-left: getPadding(17);
+    padding-right: getPadding(17);
+
+    padding-bottom: getPadding(5);
+    padding-top: getPadding(5);
+
+    gap: getGap(5);
+
+
+    &__item{
+
+        color: getColor("gris", 3);
+        cursor: pointer;
+
+        &--right{
+            margin-right: auto;
+        }
+
+        &--left{
+            margin-left: auto;
+        }
+
+        &--selected{
+            color: getColor("gris", 1);
+            font-weight: getFontWeight(6);
+        }
+
+        &--client{
+            color: getColor("turquesa", 4);
+        }
+
+
+    }
+
+
+}
